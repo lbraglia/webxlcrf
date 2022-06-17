@@ -5,7 +5,7 @@ import streamlit as st
 st.markdown("""# webxlcrf
 
 Basically [xlcrf](https://pypi.org/project/xlcrf/), but repacked as an online
-[streamlit](https://streamlit.io) service.
+[streamlit](https://streamlit.io) app.
 
 Structure file examples can be found [here](https://github.com/lbraglia/xlcrf/tree/main/examples).
 
@@ -14,7 +14,7 @@ Structure file examples can be found [here](https://github.com/lbraglia/xlcrf/tr
 
 # Uploader file
 xlsx = st.file_uploader(
-    label = "Upload CRF structure",
+    label = "Upload CRF structure below.",
     type = ["xlsx"],
     accept_multiple_files = False
 )
