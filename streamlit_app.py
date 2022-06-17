@@ -2,10 +2,12 @@ from xlcrf.CRF import CRF
 import tempfile
 import streamlit as st
 
-st.markdown("""# Test streamlit
+st.markdown("""# webxlcrf
 
+Basically [xlcrf](https://pypi.org/project/xlcrf/), but repacked as an online
+[streamlit](https://streamlit.io) service.
 
-Questo è un [link](https://www.google.it)
+Structure file examples can be found [here](https://github.com/lbraglia/xlcrf/tree/main/examples).
 
 
 """)
