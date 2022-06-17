@@ -1,4 +1,4 @@
-from src.xlcrf.CRF import CRF
+from xlcrf.CRF import CRF
 import tempfile
 import streamlit as st
 
