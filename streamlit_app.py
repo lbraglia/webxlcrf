@@ -27,9 +27,9 @@ if xlsx is not None:
     # salvo per comodità il file in un file
     with open(strucfile, "wb") as f:
         f.write(xlsx.getbuffer())
-    ex1 = CRF()
-    ex1.read_structure(strucfile)
-    ex1.create(outfile)
+    crf = CRF()
+    crf.read_structure(strucfile)
+    crf.create(outfile)
     with open(outfile, "rb") as f:
         btn = st.download_button(
             label = "Download CRF",
