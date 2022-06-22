@@ -27,10 +27,14 @@ if xlsx is not None:
             file_name = "crf.xlsx")
     
 
-st.markdown("""# webxlcrf
+with open('README.md', 'r') as r:
+    readme = r.read()
+st.markdown(readme)
 
-Questa web-app offre [xlcrf](https://pypi.org/project/xlcrf/) senza
-necessità di installazione.
+# st.markdown("""# webxlcrf
 
-""")
+# Questa web-app offre [xlcrf](https://pypi.org/project/xlcrf/) senza
+# necessità di installazione.
+
+# """)
         
