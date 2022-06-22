@@ -4,7 +4,7 @@ import streamlit as st
 
 # Uploader file
 xlsx = st.file_uploader(
-    label = "Fai l'upload del file struttura qui. Puoi compilarlo a partire dal [template](https://github.com/lbraglia/xlcrf/raw/main/examples/blank_template.xlsx) seguendo le istruzioni di sotto. Puoi fare prove con gli esempi: [esempio1](https://github.com/lbraglia/xlcrf/raw/main/examples/esempio1.xlsx), [esempio2](https://github.com/lbraglia/xlcrf/raw/main/examples/esempio2.xlsx).",
+    label = st.markdown("Fai l'upload del file struttura qui. Puoi compilarlo a partire dal [template](https://github.com/lbraglia/xlcrf/raw/main/examples/blank_template.xlsx) seguendo le istruzioni di sotto. Puoi fare prove con gli esempi: [esempio1](https://github.com/lbraglia/xlcrf/raw/main/examples/esempio1.xlsx), [esempio2](https://github.com/lbraglia/xlcrf/raw/main/examples/esempio2.xlsx)."),
     type = ["xlsx"],
     accept_multiple_files = False
 )
