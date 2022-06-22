@@ -59,6 +59,7 @@ predefinito) nel file finale. Se ad esempio desideriamo preparare tre
 tipi di tendine, etichettandole `sino` (utilizzabile per diverse domande)
 `sesso` e `titstu` compileremo come segue:
 
+|-----------|------------|
 | id_elenco | modalita   |
 |-----------|------------|
 |	sino    |    Sì      |
@@ -69,6 +70,7 @@ tipi di tendine, etichettandole `sino` (utilizzabile per diverse domande)
 | titstu    |    media   |
 | titstu    |  superiore |
 | titstu    | università |
+|------------------------|
 
 Richiameremo poi gli `id_elenco` dove opportuno nei fogli dati (es
 `sino` sarà posto in tutte le domande che vogliamo siano compilabili
