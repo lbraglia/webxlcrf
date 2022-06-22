@@ -9,11 +9,12 @@ bianco, seguendo le istruzioni di cui sotto. Alcuni esempi possono esser usati c
 [esempio2](https://github.com/lbraglia/xlcrf/raw/main/examples/esempio2.xlsx).
 
 In generale un file struttura si compone di:
-- tanti fogli dati quanti sono quelli desiderati nel file finale; ad esempio in
+- tanti **fogli dati** quanti sono quelli desiderati nel file finale;
+  in
   [esempio1](https://github.com/lbraglia/xlcrf/raw/main/examples/esempio1.xlsx)
-  si ha solamente il foglio `pazienti`, mentre in 
+  si ha solamente il foglio `pazienti`, mentre in
   [esempio2](https://github.com/lbraglia/xlcrf/raw/main/examples/esempio2.xlsx)
-  (un dataset lievemente più complesso) i fogli `pazienti`, `lesioni` 
+  (un dataset lievemente più complesso) i fogli `pazienti`, `lesioni`
   e `valutazioni`;
 - un foglio `modalita_output`, per gli elenchi/risposte a tendina che si 
   desidereranno implementare nei fogli dati;
