@@ -29,8 +29,9 @@ specificato:
 - `tipo`: `intero`, `decimale`, `data` o `ora` per avere i tipi
   numerici; inserire `elenco` per implementare una tendina; inserire
   `testo` per avere un campo senza validazione (es note)
-- `id_elenco`: inserire qui l'`id_elenco` di interesse (rinvenibile 
-  nella scheda `modalita_output`).
+- `id_elenco`: inserire qui l'`id_elenco` di interesse per
+  implementare la tendina (rinvenibile nella scheda
+  `modalita_output`).
 - `criterio`: specifica il check di validazione dati applicato in sede
   di data entry per i tipi numerici. Si può specificare 
   `tra` (compreso tra `minimo` e `massimo`),

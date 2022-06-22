@@ -3,7 +3,7 @@ import tempfile
 import streamlit as st
 
 # File uploader
-xlsx = st.file_uploader(label = "Fai l'upload del file struttura qui, dopodiché clicca su 'Download CRF.'",
+xlsx = st.file_uploader(label = "Fai l'upload del file struttura qui, dopodiché clicca su 'Download CRF'.",
                         type = ["xlsx"],
                         accept_multiple_files = False)
 
