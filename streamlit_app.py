@@ -30,11 +30,4 @@ if xlsx is not None:
 with open('README.md', 'r') as r:
     readme = r.read()
 st.markdown(readme)
-
-# st.markdown("""# webxlcrf
-
-# Questa web-app offre [xlcrf](https://pypi.org/project/xlcrf/) senza
-# necessità di installazione.
-
-# """)
         
