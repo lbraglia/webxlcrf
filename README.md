@@ -1,6 +1,5 @@
 # webxlcrf
 
-## file di struttura
 Sopra puoi fare l'upload del tuo file struttura; si tratta di un file
 `.xlsx` che specifica la struttura del dataset desiderato. Puoi
 crearlo a partire da questo
