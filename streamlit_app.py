@@ -2,19 +2,9 @@ from xlcrf.CRF import CRF
 import tempfile
 import streamlit as st
 
-st.markdown("""# webxlcrf
-
-Basically [xlcrf](https://pypi.org/project/xlcrf/), but repacked as an online
-[streamlit](https://streamlit.io) app.
-
-Structure file examples can be found [here](https://github.com/lbraglia/xlcrf/tree/main/examples).
-
-
-""")
-
 # Uploader file
 xlsx = st.file_uploader(
-    label = "Upload CRF structure below.",
+    label = "Fai l'upload del file struttura qui.",
     type = ["xlsx"],
     accept_multiple_files = False
 )
@@ -36,3 +26,11 @@ if xlsx is not None:
             data = f,
             file_name = "crf.xlsx")
     
+
+st.markdown("""# webxlcrf
+
+Questa web-app offre [xlcrf](https://pypi.org/project/xlcrf/) senza
+necessità di installazione.
+
+""")
+        
