@@ -25,7 +25,7 @@ if xlsx is not None:
             file_name = "crf.xlsx")
     
 # Include README
-with open('README.md', 'r') as r:
-    readme = r.read()
-st.markdown(readme)
+with open('frontpage.md', 'r') as fp:
+    frontpage = fp.read()
+st.markdown(frontpage)
         
