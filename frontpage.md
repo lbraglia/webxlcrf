@@ -17,8 +17,7 @@ In generale un file struttura si compone di:
   (un dataset lievemente più complesso) i fogli `pazienti`, `lesioni`
   e `valutazioni`;
 - un foglio `modalita_output`, per gli elenchi/risposte a tendina che si 
-  desidereranno implementare nei fogli dati;
-- un foglio `modalita_struttura`, di servizio, ignorabile e da ignorare.
+  desidereranno implementare nei fogli dati.
 
 ### Compilazione dei fogli di dati
 Ciascun foglio dati include tante righe quante sono le colonne che si
@@ -48,9 +47,6 @@ specificato:
 - `input_titolo`: titolo del fumetto di suggerimento (massimo 32 caratteri);
 - `input_messaggio`: corpo del testo del fumetto di
   suggerimento. Inserire qui suggerimenti per la compilazione;
-- `errore_titolo`: titolo del messaggio di errore (massimo 32
-  caratteri), visualizzato qualora l'inserimento non rispetti i
-  criteri imposti;
 - `errore_messaggio`: corpo del testo del messaggio di errore,
   suggerire i vincoli applicati all'inserimento.
 
