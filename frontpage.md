@@ -72,3 +72,32 @@ tipi di tendine, etichettandole `sino` (utilizzabile per diverse domande)
 Richiameremo poi gli `id_elenco` dove opportuno nei fogli dati (es
 `sino` sarà posto in tutte le domande che vogliamo siano compilabili
 con un Sì/No).
+
+
+### Limitazioni di Excel (ed `xlcrf`)
+Nonostante questa webapp permetta la creazione di file molto
+funzionali ad una raccolta pulita e veloce dei dati, vi sono alcune
+limitazioni insite in Excel e nello strumento retrostante (pacchetto
+[xlcrf](https://pypi.org/project/xlcrf/)) di cui è utile essere a
+conoscenza.  Per quanto riguarda Excel:
+- considerando i formati numerici (intero, decimale, data, ora), se si imposta
+  solamente il tipo e non un criterio di accettabilità Excel
+  purtroppo non implementa il controllo (questo anche se il file/check
+  viene impostato a mano); ossia Excel non è in grado di controllare
+  che sia inserito un numero (al posto di una stringa), qualunque esso
+  sia.  Un facile workaround è impostare criteri di validazione
+  estremamente laschi: ad esempio se si vuole validare che sia una
+  data ad essere inserita, si richiede una data `>= 1/1/1900` (detto
+  criterio varia in base al caso specifico, ovviamente), per un'ora `>=
+  00:00:00` (formato `HH:MM:SS`);
+- Excel non effettua validazione su copia/incolla, solo su inserimento
+  da tastiera.
+Per quanto riguarda `xlcrf`:
+- attualmente, per scelta, i file creati dal software controllano
+  l'input sino alla riga 10000 (imporre limiti all'inserimento ha un
+  costo in termini di dimensione del file creato, maneggevolezza e
+  possibilità di corruzione dati). Questo non toglie che si possa
+  inserire (in maniera non validata) oltre tale riga, ma se a monte si
+  reputa necessaria una tale quantità di righe probabilmente Excel non
+  è lo strumento indicato per questa raccolta ed è opportuno valutare
+  soluzioni dedicate/ad-hoc.
