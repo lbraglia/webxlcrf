@@ -79,7 +79,7 @@ Nonostante questa webapp permetta la creazione di file molto
 funzionali ad una raccolta pulita e veloce dei dati, vi sono alcune
 limitazioni insite in Excel e nello strumento retrostante (pacchetto
 [xlcrf](https://pypi.org/project/xlcrf/)) di cui è utile essere a
-conoscenza.  
+conoscenza.
 
 Per quanto riguarda Excel:
 - considerando i formati numerici (intero, decimale, data, ora), se si imposta
